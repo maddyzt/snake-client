@@ -16,7 +16,7 @@ const connect = function () {
   });
 
   conn.on("data", (data) => {
-    console.log(data.toString());
+    console.log('Server says: ', data.toString());
   });
 
   return conn;
