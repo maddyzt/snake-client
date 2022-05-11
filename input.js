@@ -14,6 +14,10 @@ const handleUserInput = function (key) {
     connection.write("Move: down")
   } else if (key === '\x64'){
     connection.write("Move: right");
+  } else if (key === '\x68'){
+    connection.write("Say: Hello there");
+  } else if (key === '\x6A'){
+    connection.write("Say: Wooooooo!!!");
   };
 };
 
